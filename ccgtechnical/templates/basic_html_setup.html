@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+		<link rel="stylesheet" href="../static/css/ext-css-1(gsd).css">
+		<link rel="stylesheet" href="../static/css/styles.css">
+
+		<link href='https://fonts.googleapis.com/css?family=Quicksand:400,300' rel='stylesheet' type='text/css'>
+		{% block extra_headers %} {% endblock %}
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script src="../static/js/get-shit-done.js"></script>
+		<script src="../static/js/gsdk-bootstrapswitch.js"></script>
+		<title>
+			{% block title %} {% endblock %}
+		</title>
+
+	</head>
+
+	<body style="background-image:url({{ background_pic }}); background-attachment:fixed; background-repeat: no-repeat; background-size: 100%; z-index: -1;">
+		{% block content %} {% endblock %}
+	</body>
+</html>

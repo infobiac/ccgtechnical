@@ -1,0 +1,18 @@
+{% extends "basic_html_setup.html" %}
+{% block extra_headers %}
+	<link rel="stylesheet" href="/static/css/forms.css">
+{% endblock %}
+
+{% block title %} Sign Up {% endblock %}
+{% block content %}
+
+	<form class = 'center-form vertical-align' method = "POST" action="">
+		<div style="text-align:center; padding-bottom:15px; font-family: 'Quicksand', sans-serif; font-size:25px; color:#fff;">
+			<span>custom made co.</span>
+		</div>
+		{% csrf_token %}
+		{{ form.as_p }}
+		<input type='submit' style='width:100%'class = 'btn btn-success' value='Submit'/>
+	</form>
+
+{% endblock %}
